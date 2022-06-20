@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit} from '@angular/core';
 
 @Component({
   selector: 'app-map',
@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MapComponent implements OnInit {
 
+
   constructor() { }
+  
 
   ngOnInit(): void {
+  }
+
+  getElement(pathElemId: string){
+    let path = document.getElementById(pathElemId)
+    return path?.getAttribute('d')
+  }
+  
+  getElementButton(){
+    console.log(this.getElement("BR-AC"))
   }
 
 }
