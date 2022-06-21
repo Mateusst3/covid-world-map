@@ -102,5 +102,8 @@
       }
     }
   },
-  "defaultProject": "world-map-covid"
+  "defaultProject": "world-map-covid",
+  "cli": {
+    "analytics": false
+  }
 }
